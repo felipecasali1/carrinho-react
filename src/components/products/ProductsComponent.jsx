@@ -1,13 +1,13 @@
-import "./products.css";
+import "./ProductsComponent.css";
 import { products } from "./products.js"
-import Cart from "../cart";
+import CartComponent from "../cart/CartComponent.jsx";
 import React, { useEffect } from "react";
 import { HiOutlineShoppingCart } from "react-icons/hi";
 import { HiOutlineChip } from "react-icons/hi";
 import { HiMenu } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 
-export default function Products() {
+export default function ProductsComponent() {
     const [cartItems, setCartItems] = React.useState([]);
     const [showCart, setShowCart] = React.useState(false);
 
@@ -58,7 +58,7 @@ export default function Products() {
                     }
                 </div>
             </div>
-            <Cart cartItems={cartItems} setCartItems={setCartItems} showCart={showCart} setShowCart={setShowCart}/>
+            <CartComponent cartItems={cartItems} setCartItems={setCartItems} showCart={showCart} setShowCart={setShowCart}/>
         </div>
 
     )

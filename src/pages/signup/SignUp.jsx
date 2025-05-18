@@ -1,10 +1,17 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import './style.css';
+import './SignUp.css';
+import { useAuth } from "../../context/AuthContext";
 
-export default function Cadastro() {
+export default function SignUp() {
     const navigate = useNavigate();
+    const { signUp } = useAuth();
 
+    const handleSignUp = () => {
+        signUp();
+        navigate('/produtos');
+    }
+    
     return (
         <div className="signup-container">
             <form className="signup-form">
@@ -13,8 +20,8 @@ export default function Cadastro() {
                 <input type="email" placeholder="Email"/>
                 <input type="password" placeholder="Senha"/>
                 <input type="password" placeholder="Confirmar senha"/>
-                <button type="button" onClick={() => navigate("/home")}>Cadastrar</button>
+                <button type="button" onClick={handleSignUp}>Cadastrar</button>
             </form>
         </div>
     );
-}
+};

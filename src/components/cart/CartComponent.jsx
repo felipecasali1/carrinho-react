@@ -1,9 +1,9 @@
 import React from "react";
-import "./style.css";
+import "./CartComponent.css";
 import { HiX } from "react-icons/hi";
 import { HiOutlineTicket } from "react-icons/hi";
 
-export default function Cart({cartItems, setCartItems, showCart, setShowCart}) {
+export default function CartComponent({cartItems, setCartItems, showCart, setShowCart}) {
     if (!showCart) return null;
     return (
         <div id="display">

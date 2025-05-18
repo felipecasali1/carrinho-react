@@ -1,10 +1,13 @@
-import './App.css'
-import Routers from "./components/routers";
+import './App.css';
+import AppRoutes from './routes/AppRoutes';
+import AuthProvider from './context/AuthContext';
 
 export default function App() {
   return (
     <>
-      <Routers />
+      <AuthProvider>
+        <AppRoutes />
+      </AuthProvider>
     </>
   );
 }
