@@ -1,18 +1,14 @@
-body {
-    margin: 0;
-    background-color: #18181B;
-  }
-  
 .signup-container {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #18181B;
 }
 
 .signup-form {
     background-color: #222;
-    padding: 4rem;
+    padding: 2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -36,6 +32,8 @@ body {
     height: 1.5rem;
     line-height: 1rem;
     font-size: 1rem;
+    background-color:#18181B;
+    color: white;
 }
 
 .signup-form button {
@@ -53,4 +51,23 @@ body {
 .signup-form button:hover {
     transition: 500ms;
     background-color: #A855F7
+}
+
+.signup-login-option {
+    margin-top: 1rem;
+    color: white;
+}
+
+.signup-login-option p {
+    float: right;
+}
+
+.signup-login-option a {
+    color: #9333EA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-login-option a:hover {
+    color: #A855F7;
 }

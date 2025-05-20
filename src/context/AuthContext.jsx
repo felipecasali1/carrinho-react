@@ -26,7 +26,7 @@ export const AuthProvider = ({children}) => {
 
     //  Retorna o provider e compartilha o estado, envolvendo os componentes children
     return (
-        <AuthContext.Provider value={ {signUp, login, logout} }>
+        <AuthContext.Provider value={ {auth, signUp, login, logout} }>
             {children}
         </AuthContext.Provider>
     );
