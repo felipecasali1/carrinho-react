@@ -22,15 +22,15 @@ export default function CartComponent({cartItems, setCartItems, showCart, setSho
                             return (
                                 <div className="cart-item-area" key={index}>
                                     <div className="cart-item-img-area">
-                                        <img src={item.image}/>
+                                        <img src={item.imagem}/>
                                     </div>
                                     <div className="cart-item-info">
                                         <div className="cart-item-title">
-                                            <p className="sec-txt-color">{item.name}</p>
+                                            <p className="sec-txt-color">{item.nome}</p>
                                         </div>
                                         <div className="cart-item-footer">
                                             <div className="cart-item-price">
-                                                <p className="sec-txt-color">R$ {item.price}</p>
+                                                <p className="sec-txt-color">R$ {item.valor}</p>
                                             </div>
                                             <div className="cart-item-controls">
                                                 <div className="cart-item-decrease-qty">
@@ -55,7 +55,7 @@ export default function CartComponent({cartItems, setCartItems, showCart, setSho
                         <p className="sec-txt-color">Total:</p><p className="prim-txt-color"><strong>R${" "}{
                                 cartItems?.length > 0
                                 ? cartItems
-                                    .reduce((total, item) => total + item.price, 0)
+                                    .reduce((total, item) => total + item.valor, 0)
                                     .toFixed(2)
                                     .replace(".", ",")
                                 : "0,00"

@@ -40,22 +40,18 @@
     box-sizing: border-box;
 }
 
-#cart-tab-exit {
-    height: 2rem;
-    width: 2rem;
-}
-
 #cart-tab-exit-button {
-    font-size: 24px;
-    height: 100%;
-    width: 100%;
-    background-color: #18181B;
-    border-style: none;
-    color: #A1A1AA;
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 2rem;
+    background-color: #18181B;
+    border: none;
+    color: #A1A1AA;
+    font-size: 24px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    padding-bottom: 10px;
 }
 
 #cart-tab-exit-button:hover {
@@ -97,13 +93,16 @@
     height: 1rem;
 }
 
+#cart-tab-add-coupon svg {
+    padding-top: 18px;
+}
+
 #cart-tab-add-coupon button {
     border: none;
     font-size: 1rem;
     background-color: transparent;
     text-decoration: none;
     color: #A855F7;
-    margin-left: 0.5rem;
 }
 
 #cart-tab-add-coupon button:hover {
@@ -183,13 +182,14 @@
     display: flex;
     justify-content: space-between;
     margin-left: 1rem;
+    box-sizing: border-box;
+    align-items: flex-end;
 }
 
 .cart-item-decrease-qty button {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4px;
     border: 2px solid #3F3F46;
     height: 40px;
     width: 40px;
@@ -211,7 +211,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 4px;
     border: 2px solid #A855F7;
     height: 40px;
     width: 40px;
