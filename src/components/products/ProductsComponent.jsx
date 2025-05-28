@@ -6,10 +6,12 @@ import { HiOutlineChip } from "react-icons/hi";
 import { HiMenu } from "react-icons/hi";
 import { HiPlus } from "react-icons/hi";
 import { DataContext } from "../../context/DataContext.jsx";
+import { useNavigate } from "react-router";
 
 export default function ProductsComponent() {
     const [cartItems, setCartItems] = React.useState([]);
     const [showCart, setShowCart] = React.useState(false);
+    const navigate = useNavigate();
 
     const { produtos } = React.useContext(DataContext);
 
@@ -21,7 +23,7 @@ export default function ProductsComponent() {
         <div id="store-container">
             <div id="store-navbar">
                 <div id="store-menu">
-                    <button><HiMenu size={35}/></button>
+                    <button onClick={() => navigate("/dashboard")}><HiMenu size={35}/></button>
                 </div>
                 <div id="store-logo-name">
                     <div id="store-logo">

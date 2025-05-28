@@ -42,9 +42,6 @@ button {
 }
 
 #store-menu button {
-    margin-top: 3px;
-    padding-top: 7px;
-    padding-left: 7px;
     height: 100%;
     width: 100%;
     color: white;
@@ -95,7 +92,6 @@ button {
 }
 
 #cart-button button {
-    margin-top: 3px;
     height: 100%;
     width: 100%;
     border-radius: 10px;
